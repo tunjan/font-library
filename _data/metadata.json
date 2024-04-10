@@ -727,7 +727,8 @@
     "warang-citi",
     "yezidi",
     "yi",
-    "zanabazar-square"
+    "zanabazar-square",
+    "znamenny"
   ],
   "variants": [
     "100",
@@ -749,5 +750,5 @@
     "italic",
     "regular"
   ],
-  "totalFamilies": 1617
+  "totalFamilies": 1618
 }
