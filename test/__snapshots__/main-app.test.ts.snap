@@ -684,6 +684,25 @@ exports[`MainApp renders correctly 1`] = `
                 
             <button
               is="tag-button"
+              style="font-family: "Yarndings 12";"
+              title="craft"
+              value="craft"
+            >
+              
+                  craft
+                
+            </button>
+            
+              
+          </li>
+          
+              
+              
+          <li>
+            
+                
+            <button
+              is="tag-button"
               style="font-family: "Are You Serious";"
               title="curls"
               value="curls"
@@ -766,6 +785,25 @@ exports[`MainApp renders correctly 1`] = `
             >
               
                   didone
+                
+            </button>
+            
+              
+          </li>
+          
+              
+              
+          <li>
+            
+                
+            <button
+              is="tag-button"
+              style="font-family: "Noto Sans Symbols 2";"
+              title="dingbat"
+              value="dingbat"
+            >
+              
+                  dingbat
                 
             </button>
             
@@ -3047,6 +3085,14 @@ exports[`MainApp renders correctly 1`] = `
                   
               </option>
               <option
+                id="craft"
+                value="craft"
+              >
+                
+                    craft
+                  
+              </option>
+              <option
                 id="curls"
                 value="curls"
               >
@@ -3084,6 +3130,14 @@ exports[`MainApp renders correctly 1`] = `
               >
                 
                     didone
+                  
+              </option>
+              <option
+                id="dingbat"
+                value="dingbat"
+              >
+                
+                    dingbat
                   
               </option>
               <option

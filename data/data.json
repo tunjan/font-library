@@ -12988,7 +12988,7 @@
       "latin-ext"
     ],
     "category": "sans-serif",
-    "tags": ["icons"],
+    "tags": ["icons", "dingbat"],
     "lineNumber": 1042,
     "variable": false,
     "lastModified": "2023-11-09"
@@ -13993,7 +13993,7 @@
     "variants": ["regular"],
     "subsets": ["math", "symbols", "znamenny", "latin", "latin-ext"],
     "category": "sans-serif",
-    "tags": [],
+    "tags": ["color"],
     "lineNumber": 1109,
     "variable": false,
     "lastModified": "2024-04-09"
@@ -19949,7 +19949,7 @@
     "variants": ["regular"],
     "subsets": ["math", "symbols", "latin"],
     "category": "display",
-    "tags": [],
+    "tags": ["craft", "dingbat"],
     "lineNumber": 1581,
     "variable": false,
     "lastModified": "2024-03-25"
@@ -19959,7 +19959,7 @@
     "variants": ["regular"],
     "subsets": ["math", "symbols", "latin"],
     "category": "display",
-    "tags": [],
+    "tags": ["craft", "dingbat"],
     "lineNumber": 1582,
     "variable": false,
     "lastModified": "2024-03-25"
@@ -19969,7 +19969,7 @@
     "variants": ["regular"],
     "subsets": ["math", "symbols", "latin"],
     "category": "display",
-    "tags": [],
+    "tags": ["craft", "dingbat"],
     "lineNumber": 1583,
     "variable": false,
     "lastModified": "2024-03-25"
@@ -19979,7 +19979,7 @@
     "variants": ["regular"],
     "subsets": ["math", "symbols", "latin"],
     "category": "display",
-    "tags": [],
+    "tags": ["craft", "dingbat"],
     "lineNumber": 1584,
     "variable": false,
     "lastModified": "2024-03-25"

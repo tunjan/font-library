@@ -137,6 +137,10 @@
       "sample": "Euphoria Script"
     },
     {
+      "name": "craft",
+      "sample": "Yarndings 12"
+    },
+    {
       "name": "curls",
       "sample": "Are You Serious"
     },
@@ -155,6 +159,10 @@
     {
       "name": "didone",
       "sample": "Abril Fatface"
+    },
+    {
+      "name": "dingbat",
+      "sample": "Noto Sans Symbols 2"
     },
     {
       "name": "disco",
