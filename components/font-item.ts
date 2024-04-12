@@ -7,25 +7,21 @@ type SampleSubsets = typeof sampleSubsets;
 type Swaps = typeof swaps;
 
 class FontItem extends HTMLLIElement {
-  subset: string;
+  private subset: string;
 
-  constructor() {
-    super();
+  public get font(): GeneratedData[number] {
+    return JSON.parse(this.getAttribute("font")) as GeneratedData[number];
   }
 
-  get font(): GeneratedData[number] {
-    return JSON.parse(this.getAttribute("font"));
-  }
-
-  get selectedSubset(): string {
+  public get selectedSubset(): string {
     return this.getAttribute("selected-subset") || "";
   }
 
-  get selectedVariant(): string {
+  public get selectedVariant(): string {
     return this.getAttribute("selected-variant") || "";
   }
 
-  get previewName(): string {
+  public get previewName(): string {
     const { family, subsets } = this.font;
     if (this.selectedSubset && this.selectedSubset in sampleSubsets) {
       return sampleSubsets[this.selectedSubset as keyof SampleSubsets];
@@ -45,15 +41,15 @@ class FontItem extends HTMLLIElement {
     return family;
   }
 
-  get id(): string {
+  public get id(): string {
     return this.font.family.toLowerCase().replace(/ /g, "-");
   }
 
-  get slug(): string {
+  public get slug(): string {
     return this.font.family.replace(/ /g, "+");
   }
 
-  get familyStyle(): string {
+  public get familyStyle(): string {
     const { font, selectedVariant, previewName, subset } = this;
     return familyStyle({
       family: font.family,
@@ -63,7 +59,7 @@ class FontItem extends HTMLLIElement {
     });
   }
 
-  connectedCallback() {
+  public connectedCallback(): void {
     const { family, category, variants, subsets, lineNumber, tags, variable } =
       this.font;
     this.subset = this.selectedSubset;
@@ -83,7 +79,7 @@ class FontItem extends HTMLLIElement {
       </div>
       <div class="family-meta-container">
         <span class="family-title-small">${
-          this.previewName == family ? "" : family
+          this.previewName === family ? "" : family
         }</span>
         <div class="family-meta">
           <ul>
@@ -117,7 +113,7 @@ class FontItem extends HTMLLIElement {
     </div>`;
   }
 
-  addFontToHead(): void {
+  public addFontToHead(): void {
     const { slug, selectedVariant, previewName, font } = this;
     const { family, variants } = font;
 
@@ -133,7 +129,7 @@ class FontItem extends HTMLLIElement {
     document.head.append(linkElement);
   }
 
-  disconnectedCallback() {
+  public disconnectedCallback(): void {
     const linkElement = document.querySelector(
       `link[data-family="${this.font.family}"]`,
     );
