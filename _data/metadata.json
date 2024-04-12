@@ -153,6 +153,10 @@
       "sample": "Bellota"
     },
     {
+      "name": "diagram",
+      "sample": "Linefont"
+    },
+    {
       "name": "didone",
       "sample": "Abril Fatface"
     },

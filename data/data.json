@@ -9278,7 +9278,7 @@
     ],
     "subsets": ["latin"],
     "category": "display",
-    "tags": ["lines"],
+    "tags": ["lines", "diagram"],
     "lineNumber": 742,
     "variable": false,
     "lastModified": "2023-12-14"
@@ -19914,7 +19914,7 @@
     ],
     "subsets": ["latin"],
     "category": "display",
-    "tags": [],
+    "tags": ["diagram"],
     "lineNumber": 1580,
     "variable": false,
     "lastModified": "2023-12-14"

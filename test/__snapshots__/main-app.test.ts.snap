@@ -760,6 +760,25 @@ exports[`MainApp renders correctly 1`] = `
                 
             <button
               is="tag-button"
+              style="font-family: "Linefont";"
+              title="diagram"
+              value="diagram"
+            >
+              
+                  diagram
+                
+            </button>
+            
+              
+          </li>
+          
+              
+              
+          <li>
+            
+                
+            <button
+              is="tag-button"
               style="font-family: "Abril Fatface";"
               title="didone"
               value="didone"
@@ -3171,6 +3190,14 @@ exports[`MainApp renders correctly 1`] = `
               >
                 
                     decorative
+                  
+              </option>
+              <option
+                id="diagram"
+                value="diagram"
+              >
+                
+                    diagram
                   
               </option>
               <option
