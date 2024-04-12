@@ -7579,7 +7579,7 @@
     "variants": ["regular"],
     "subsets": ["math", "symbols", "latin", "latin-ext"],
     "category": "display",
-    "tags": [],
+    "tags": ["knit"],
     "lineNumber": 610,
     "variable": false,
     "lastModified": "2024-04-12"
@@ -7589,7 +7589,7 @@
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
     "category": "display",
-    "tags": [],
+    "tags": ["knit"],
     "lineNumber": 611,
     "variable": false,
     "lastModified": "2024-04-12"
@@ -7599,7 +7599,7 @@
     "variants": ["regular"],
     "subsets": ["math", "symbols", "latin", "latin-ext"],
     "category": "display",
-    "tags": [],
+    "tags": ["needlepoint", "pixel"],
     "lineNumber": 612,
     "variable": false,
     "lastModified": "2024-03-25"
@@ -7609,7 +7609,7 @@
     "variants": ["regular"],
     "subsets": ["math", "symbols", "latin", "latin-ext"],
     "category": "display",
-    "tags": [],
+    "tags": ["needlepoint"],
     "lineNumber": 613,
     "variable": false,
     "lastModified": "2024-04-12"
@@ -7649,7 +7649,7 @@
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
     "category": "display",
-    "tags": [],
+    "tags": ["knit", "sport"],
     "lineNumber": 617,
     "variable": false,
     "lastModified": "2024-04-12"
@@ -7659,7 +7659,7 @@
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
     "category": "display",
-    "tags": [],
+    "tags": ["knit", "sport"],
     "lineNumber": 618,
     "variable": false,
     "lastModified": "2024-04-12"
@@ -7669,7 +7669,7 @@
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
     "category": "display",
-    "tags": [],
+    "tags": ["knit", "sport"],
     "lineNumber": 619,
     "variable": false,
     "lastModified": "2024-04-12"
@@ -7679,7 +7679,7 @@
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
     "category": "display",
-    "tags": [],
+    "tags": ["knit", "sport"],
     "lineNumber": 620,
     "variable": false,
     "lastModified": "2024-04-12"
@@ -7689,7 +7689,7 @@
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
     "category": "display",
-    "tags": [],
+    "tags": ["knit", "sport"],
     "lineNumber": 621,
     "variable": false,
     "lastModified": "2024-04-12"
@@ -7699,7 +7699,7 @@
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
     "category": "display",
-    "tags": [],
+    "tags": ["knit", "sport"],
     "lineNumber": 622,
     "variable": false,
     "lastModified": "2024-04-12"
@@ -7709,7 +7709,7 @@
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
     "category": "display",
-    "tags": [],
+    "tags": ["knit", "sport"],
     "lineNumber": 623,
     "variable": false,
     "lastModified": "2024-04-12"
@@ -10338,7 +10338,7 @@
     "variants": ["regular"],
     "subsets": ["math", "symbols", "latin", "latin-ext"],
     "category": "display",
-    "tags": [],
+    "tags": ["kint"],
     "lineNumber": 830,
     "variable": false,
     "lastModified": "2024-02-16"
@@ -10348,7 +10348,7 @@
     "variants": ["regular"],
     "subsets": ["math", "symbols", "latin", "latin-ext"],
     "category": "display",
-    "tags": [],
+    "tags": ["knit"],
     "lineNumber": 831,
     "variable": false,
     "lastModified": "2024-04-12"
@@ -20092,7 +20092,7 @@
     "variants": ["regular"],
     "subsets": ["math", "symbols", "latin"],
     "category": "display",
-    "tags": ["craft", "dingbat"],
+    "tags": ["dingbat", "knit"],
     "lineNumber": 1594,
     "variable": false,
     "lastModified": "2024-03-25"
@@ -20102,7 +20102,7 @@
     "variants": ["regular"],
     "subsets": ["math", "symbols", "latin"],
     "category": "display",
-    "tags": ["craft", "dingbat"],
+    "tags": ["dingbat", "knit"],
     "lineNumber": 1595,
     "variable": false,
     "lastModified": "2024-03-25"
@@ -20112,7 +20112,7 @@
     "variants": ["regular"],
     "subsets": ["math", "symbols", "latin"],
     "category": "display",
-    "tags": ["craft", "dingbat"],
+    "tags": ["dingbat", "knit"],
     "lineNumber": 1596,
     "variable": false,
     "lastModified": "2024-03-25"
@@ -20122,7 +20122,7 @@
     "variants": ["regular"],
     "subsets": ["math", "symbols", "latin"],
     "category": "display",
-    "tags": ["craft", "dingbat"],
+    "tags": ["dingbat", "knit"],
     "lineNumber": 1597,
     "variable": false,
     "lastModified": "2024-03-25"

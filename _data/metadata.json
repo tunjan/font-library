@@ -137,10 +137,6 @@
       "sample": "Euphoria Script"
     },
     {
-      "name": "craft",
-      "sample": "Yarndings 12"
-    },
-    {
       "name": "curls",
       "sample": "Are You Serious"
     },
@@ -329,6 +325,14 @@
       "sample": "Butterfly Kids"
     },
     {
+      "name": "kint",
+      "sample": "Micro 5"
+    },
+    {
+      "name": "knit",
+      "sample": "Jacquard 12 Charted"
+    },
+    {
       "name": "korean",
       "sample": "Diphylleia"
     },
@@ -391,6 +395,10 @@
     {
       "name": "narrow",
       "sample": "Akshar"
+    },
+    {
+      "name": "needlepoint",
+      "sample": "Jacquarda Bastarda 9"
     },
     {
       "name": "neoclassical",
@@ -479,6 +487,10 @@
     {
       "name": "spicy",
       "sample": "Black And White Picture"
+    },
+    {
+      "name": "sport",
+      "sample": "Jersey 10"
     },
     {
       "name": "square",

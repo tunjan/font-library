@@ -684,25 +684,6 @@ exports[`MainApp renders correctly 1`] = `
                 
             <button
               is="tag-button"
-              style="font-family: "Yarndings 12";"
-              title="craft"
-              value="craft"
-            >
-              
-                  craft
-                
-            </button>
-            
-              
-          </li>
-          
-              
-              
-          <li>
-            
-                
-            <button
-              is="tag-button"
               style="font-family: "Are You Serious";"
               title="curls"
               value="curls"
@@ -1596,6 +1577,44 @@ exports[`MainApp renders correctly 1`] = `
                 
             <button
               is="tag-button"
+              style="font-family: "Micro 5";"
+              title="kint"
+              value="kint"
+            >
+              
+                  kint
+                
+            </button>
+            
+              
+          </li>
+          
+              
+              
+          <li>
+            
+                
+            <button
+              is="tag-button"
+              style="font-family: "Jacquard 12 Charted";"
+              title="knit"
+              value="knit"
+            >
+              
+                  knit
+                
+            </button>
+            
+              
+          </li>
+          
+              
+              
+          <li>
+            
+                
+            <button
+              is="tag-button"
               style="font-family: "Diphylleia";"
               title="korean"
               value="korean"
@@ -1887,6 +1906,25 @@ exports[`MainApp renders correctly 1`] = `
             >
               
                   narrow
+                
+            </button>
+            
+              
+          </li>
+          
+              
+              
+          <li>
+            
+                
+            <button
+              is="tag-button"
+              style="font-family: "Jacquarda Bastarda 9";"
+              title="needlepoint"
+              value="needlepoint"
+            >
+              
+                  needlepoint
                 
             </button>
             
@@ -2305,6 +2343,25 @@ exports[`MainApp renders correctly 1`] = `
             >
               
                   spicy
+                
+            </button>
+            
+              
+          </li>
+          
+              
+              
+          <li>
+            
+                
+            <button
+              is="tag-button"
+              style="font-family: "Jersey 10";"
+              title="sport"
+              value="sport"
+            >
+              
+                  sport
                 
             </button>
             
@@ -3085,14 +3142,6 @@ exports[`MainApp renders correctly 1`] = `
                   
               </option>
               <option
-                id="craft"
-                value="craft"
-              >
-                
-                    craft
-                  
-              </option>
-              <option
                 id="curls"
                 value="curls"
               >
@@ -3469,6 +3518,22 @@ exports[`MainApp renders correctly 1`] = `
                   
               </option>
               <option
+                id="kint"
+                value="kint"
+              >
+                
+                    kint
+                  
+              </option>
+              <option
+                id="knit"
+                value="knit"
+              >
+                
+                    knit
+                  
+              </option>
+              <option
                 id="korean"
                 value="korean"
               >
@@ -3594,6 +3659,14 @@ exports[`MainApp renders correctly 1`] = `
               >
                 
                     narrow
+                  
+              </option>
+              <option
+                id="needlepoint"
+                value="needlepoint"
+              >
+                
+                    needlepoint
                   
               </option>
               <option
@@ -3770,6 +3843,14 @@ exports[`MainApp renders correctly 1`] = `
               >
                 
                     spicy
+                  
+              </option>
+              <option
+                id="sport"
+                value="sport"
+              >
+                
+                    sport
                   
               </option>
               <option
