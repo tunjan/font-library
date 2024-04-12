@@ -10338,7 +10338,7 @@
     "variants": ["regular"],
     "subsets": ["math", "symbols", "latin", "latin-ext"],
     "category": "display",
-    "tags": ["kint"],
+    "tags": ["kint", "small sizes"],
     "lineNumber": 830,
     "variable": false,
     "lastModified": "2024-02-16"
@@ -10348,7 +10348,7 @@
     "variants": ["regular"],
     "subsets": ["math", "symbols", "latin", "latin-ext"],
     "category": "display",
-    "tags": ["knit"],
+    "tags": ["knit", "small sizes"],
     "lineNumber": 831,
     "variable": false,
     "lastModified": "2024-04-12"
