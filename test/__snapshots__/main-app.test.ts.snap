@@ -3,7 +3,7 @@
 exports[`MainApp renders correctly 1`] = `
 <main-app
   current-page="1"
-  results-length="1617"
+  results-length="1618"
 >
   
       
@@ -5006,6 +5006,12 @@ exports[`MainApp renders correctly 1`] = `
               >
                 zanabazar-square
               </option>
+              <option
+                id="znamenny"
+                value="znamenny"
+              >
+                znamenny
+              </option>
             </select>
             
               
@@ -5183,16 +5189,16 @@ exports[`MainApp renders correctly 1`] = `
         
             
         <search-status
-          results-length="1617"
+          results-length="1618"
         >
           <div>
-            Found 1617 fonts
+            Found 1618 fonts
           </div>
         </search-status>
         
             
         <sort-by
-          results-length="1617"
+          results-length="1618"
           sort-by="family"
         >
           <div
@@ -6507,7 +6513,7 @@ exports[`MainApp renders correctly 1`] = `
             
         <pagination-buttons
           current-page="1"
-          results-length="1617"
+          results-length="1618"
         >
           <button
             class="btn"
