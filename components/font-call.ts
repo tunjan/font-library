@@ -1,6 +1,38 @@
 import { GeneratedData } from "./main-app";
 import rtlSubsets from "../data/rtl.json";
 
+export function fontCallVariant(
+  variants: GeneratedData[number]["variants"],
+): string {
+  if (variants.length === 0) {
+    return "";
+  }
+
+  const [firstVariant] = variants;
+  if (/\d+/g.test(firstVariant)) {
+    return `:wght@${firstVariant}`;
+  }
+  if (firstVariant.includes("italic")) {
+    return `:ital@1`;
+  }
+  return "";
+}
+
+export function fontCallSelectedVariant(selectedVariant: string): string {
+  const variantNumber = selectedVariant.match(/\d+/g); // get number from selectedVariant
+
+  const variants = [];
+  if (selectedVariant.includes("italic")) {
+    variants.push(selectedVariant === "italic" ? "ital@1" : "ital");
+  }
+  if (variantNumber && variantNumber[0]) {
+    variants.push(
+      `wght@${variants.includes("ital") ? "1," : ""}${variantNumber[0]}`,
+    );
+  }
+  return `:${variants.join(",")}`;
+}
+
 export default function fontCall({
   variants,
   slug,
@@ -27,31 +59,6 @@ export default function fontCall({
   return `https://fonts.googleapis.com/css2?family=${fontCallString}`;
 }
 
-function fontCallVariant(variants: GeneratedData[number]["variants"]): string {
-  const [firstVariant] = variants;
-  if (/\d+/g.test(firstVariant)) {
-    return `:wght@${firstVariant}`;
-  } else if (firstVariant.includes("italic")) {
-    return `:ital@1`;
-  }
-}
-
-function fontCallSelectedVariant(selectedVariant: string): string {
-  const hasItalic = selectedVariant.includes("italic");
-  const variantNumber = selectedVariant.match(/\d+/g); // get number from selectedVariant
-
-  const variants = [];
-  if (selectedVariant === "italic") {
-    variants.push("ital@1");
-  } else if (hasItalic) {
-    variants.push("ital");
-  }
-  if (variantNumber && variantNumber[0]) {
-    variants.push(`wght@${hasItalic ? "1," : ""}${variantNumber[0]}`);
-  }
-  return `:${variants.join(",")}`;
-}
-
 export function familyStyle({
   family,
   selectedVariant,
@@ -63,17 +70,17 @@ export function familyStyle({
   previewName: string;
   subset: string;
 }): string {
-  let style = `font-family: '${family}';`;
+  const styleParts = [`font-family: '${family}'`];
   if (rtlSubsets.includes(subset) && family !== previewName) {
-    style += "direction: rtl;";
+    styleParts.push("direction: rtl");
   }
   if (selectedVariant.includes("italic")) {
-    style += "font-style: italic;";
+    styleParts.push("font-style: italic");
   }
   // get variant number from selectedVariant
   const variantNumber = selectedVariant.match(/\d+/g);
   if (variantNumber && variantNumber[0]) {
-    style += `font-weight: ${variantNumber[0]};`;
+    styleParts.push(`font-weight: ${variantNumber[0]}`);
   }
-  return style;
+  return `${styleParts.join(";")};`;
 }

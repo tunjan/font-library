@@ -1,6 +1,7 @@
 import customEvent from "./custom-event";
 import filter from "./filter";
 import generatedData from "../data/data.json";
+
 export type GeneratedData = typeof generatedData;
 
 type SelectTypes =
@@ -13,19 +14,22 @@ type SelectTypes =
 class MainApp extends HTMLElement {
   private paginationButtons: HTMLElement =
     this.querySelector("pagination-buttons");
+
   private searchStatus: HTMLElement = this.querySelector("search-status");
+
   private sortByElm: HTMLElement = this.querySelector("sort-by");
+
   private fontList: HTMLUListElement = this.querySelector("ul[is=font-list]");
+
   private content: HTMLElement = this.querySelector("#content");
+
   private selectedSearchElm: HTMLInputElement =
     this.querySelector("#selectedSearch");
 
-  public get pageSize(): number {
-    return 10;
-  }
+  public pageSize = 10;
 
   public get currentPage(): number {
-    return Number.parseInt(this.getAttribute("current-page"));
+    return Number.parseInt(this.getAttribute("current-page"), 10);
   }
 
   private set currentPage(value: number) {
@@ -48,7 +52,7 @@ class MainApp extends HTMLElement {
   }
 
   private get resultsLength(): number {
-    return Number.parseInt(this.getAttribute("results-length"));
+    return Number.parseInt(this.getAttribute("results-length"), 10);
   }
 
   public get selectedCategory(): string {
@@ -156,28 +160,28 @@ class MainApp extends HTMLElement {
     else this.removeAllFilters();
   }
 
-  private removeSingleFilter(filter: string): void {
-    switch (filter) {
+  private removeSingleFilter(currentFilter: string): void {
+    switch (currentFilter) {
       case "selectedSearch": {
         this.removeSearch();
         break;
       }
       case "selectedVariable": {
-        this.removeCheckbox();
+        MainApp.removeCheckbox();
         break;
       }
       default: {
-        this.removeSelect(filter);
+        MainApp.removeSelect(currentFilter);
       }
     }
   }
 
   private removeAllFilters(): void {
-    if (this.selectedCategory) this.removeSelect("selectedCategory");
-    if (this.selectedSubset) this.removeSelect("selectedSubset");
-    if (this.selectedVariant) this.removeSelect("selectedVariant");
-    if (this.selectedVariable) this.removeCheckbox();
-    if (this.selectedTag) this.removeSelect("selectedTag");
+    if (this.selectedCategory) MainApp.removeSelect("selectedCategory");
+    if (this.selectedSubset) MainApp.removeSelect("selectedSubset");
+    if (this.selectedVariant) MainApp.removeSelect("selectedVariant");
+    if (this.selectedVariable) MainApp.removeCheckbox();
+    if (this.selectedTag) MainApp.removeSelect("selectedTag");
     if (this.selectedSearch) this.removeSearch();
   }
 
@@ -186,7 +190,7 @@ class MainApp extends HTMLElement {
     (this.selectedSearchElm as HTMLInputElement).value = "";
   }
 
-  private removeSelect(value: string): void {
+  private static removeSelect(value: string): void {
     window.dispatchEvent(
       customEvent("remove-select", {
         value,
@@ -194,7 +198,7 @@ class MainApp extends HTMLElement {
     );
   }
 
-  private removeCheckbox(): void {
+  private static removeCheckbox(): void {
     window.dispatchEvent(customEvent("remove-checkbox"));
   }
 
